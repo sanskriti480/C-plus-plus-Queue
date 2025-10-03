@@ -124,6 +124,30 @@ To study and implement the **Queue data structure** in C++ by performing:
 
 ---
 
+## Algorithm
+---
+
+1. Start
+2. Initialize Queue
+   - Set front = -1 and rear = -1.
+3. Enqueue Operation (Insert)
+   - If rear == SIZE - 1, print "Queue Overflow" and stop.
+   - If front == -1, set front = 0 (first element insertion).
+   - Increment rear.
+   - Insert element at arr[rear].
+   - Print success message.
+4. Dequeue Operation (Delete)
+   - If front == -1 OR front > rear, print "Queue Underflow" and stop.
+   - Print element at arr[front] as removed.
+   - Increment front.
+5. Display Operation
+   - If front == -1 OR front > rear, print "Queue is empty".
+   - Else, traverse array from front to rear and print elements.
+6. Repeat Steps 3–5 as per user/program instructions.
+7. Stop.
+
+---
+
 ## Concepts Used
 - **FIFO Principle** (First In First Out).
 - **Array-based implementation** of queue.
